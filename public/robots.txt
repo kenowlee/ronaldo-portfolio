@@ -6,3 +6,5 @@ Allow: /
 
 User-agent: GPTBot
 Disallow: /
+
+Sitemap: https://ronaldo-portfolio.ronaldo-nasa.workers.dev/sitemap.xml

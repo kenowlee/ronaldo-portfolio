@@ -11,10 +11,15 @@ const {
   description = 'Engenheiro backend sênior com foco em arquitetura de software, sistemas em produção e AI Engineering.',
 } = Astro.props;
 
+const siteUrl = 'https://ronaldo-portfolio.ronaldo-nasa.workers.dev';
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
+const ogImageUrl = new URL('/og-image.png', siteUrl);
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Ronaldo Santos',
+  url: siteUrl,
   jobTitle: 'Senior Backend Engineer',
   description: 'Engenheiro de software sênior no Brasil, com atuação remota em backend, arquitetura de software e AI Engineering.',
   email: 'mailto:ronaldo.nasa@gmail.com',
@@ -43,15 +48,30 @@ const jsonLd = {
     <meta name="description" content={description} />
     <meta name="theme-color" content="#090b10" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ronaldo Santos — Backend, Arquitetura de Software e AI Engineering" />
+
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
     <title>{title}</title>
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
     <slot />
   </body>
 </html>
