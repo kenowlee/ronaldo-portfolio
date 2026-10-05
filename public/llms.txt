@@ -1,0 +1,36 @@
+# Ronaldo Santos
+
+Engenheiro Backend Sênior com foco em Arquitetura de Software e AI Engineering.
+
+## Especialidades
+- Backend Engineering
+- Arquitetura de Software
+- Sistemas Enterprise
+- AI Engineering
+- Agentic Systems
+- Model Context Protocol (MCP)
+- Retrieval-Augmented Generation (RAG)
+- Evals e Context Engineering
+
+## Projetos em destaque
+- AI-Kit — Toolkit para Engenharia de Software Agentic
+- Smart Data — Engenharia de Plataforma Enterprise
+- DAZ — Assistente Conversacional com IA para o Agronegócio
+- Mapa Vivo — Inteligência de Codebase Assistida por IA
+- SIF — Sistemas Críticos para o Setor Público
+- TIM Wallet — Engenharia Fintech & Pagamentos
+
+## Serviços
+- Integração de IA & Fluxos Agentic
+- Plugins para ChatGPT & Integrações MCP
+- Hardening de Software Criado com IA
+- Modernização de Backend & Arquitetura
+- Avaliação de Codebase para IA
+
+## Contato
+- E-mail: ronaldo.nasa@gmail.com
+- Disponibilidade: oportunidades, projetos e parcerias · Brasil · Remoto
+
+## Perfis
+- GitHub: https://github.com/kenowlee/
+- LinkedIn: https://www.linkedin.com/in/ronaldo-ns/

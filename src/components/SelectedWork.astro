@@ -1,0 +1,16 @@
+---
+import { projects } from '../data/projects';
+import ProjectCase from './ProjectCase.astro';
+---
+<section class="section work" id="work" aria-labelledby="work-title">
+  <div class="shell">
+    <p class="section-index">02 / PROJETOS EM DESTAQUE</p>
+    <div class="section-heading-row">
+      <h2 id="work-title">Sistemas, produtos e problemas de engenharia que moldaram a forma como eu trabalho.</h2>
+      <p>Seis cases selecionados. Expanda qualquer um deles sem sair da página.</p>
+    </div>
+    <div class="projects-list">
+      {projects.map((project) => <ProjectCase project={project} />)}
+    </div>
+  </div>
+</section>

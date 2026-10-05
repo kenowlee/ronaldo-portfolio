@@ -1,0 +1,27 @@
+---
+const services = [
+  ['Integração de IA & Fluxos Agentic', 'Conecto modelos de linguagem, ferramentas e agentes aos sistemas existentes da empresa sem transformar o LLM na fonte de verdade do negócio.'],
+  ['Plugins para ChatGPT & Integrações MCP', 'Conecto APIs, ferramentas e conhecimento da empresa a interfaces de IA por meio de plugins, skills e integrações baseadas em MCP.'],
+  ['Hardening de Software Criado com IA', 'Reviso aplicações criadas com IA em pontos como autenticação, autorização, secrets, validação, dependências, deploy e prontidão para produção.'],
+  ['Modernização de Backend & Arquitetura', 'Melhoro APIs, sistemas legados, integrações, performance, observabilidade e práticas de entrega.'],
+  ['Avaliação de Codebase para IA', 'Mapeio estrutura, dependências e contexto de engenharia para que equipes e sistemas de IA trabalhem sobre a codebase com mais segurança e eficiência.'],
+];
+---
+<section class="section services" id="services" aria-labelledby="services-title">
+  <div class="shell">
+    <p class="section-index">04 / SERVIÇOS</p>
+    <div class="section-heading-row">
+      <h2 id="services-title">Engenharia para empresas que estão construindo com — ou ao redor de — IA.</h2>
+      <p>Além do portfólio, uma forma prática de aplicar experiência de engenharia aos desafios reais da adoção de IA.</p>
+    </div>
+    <div class="services-grid">
+      {services.map(([title, description], index) => (
+        <article>
+          <span>0{index + 1}</span>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

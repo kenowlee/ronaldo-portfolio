@@ -1,0 +1,32 @@
+---
+import type { Project } from '../data/projects';
+const { project } = Astro.props as { project: Project };
+---
+<details class="project-case">
+  <summary>
+    <div class="project-heading">
+      <span class="project-number">{project.number}</span>
+      <div>
+        <span class="project-category">{project.category}</span>
+        <h3>{project.name}</h3>
+        <p class="project-subtitle">{project.subtitle}</p>
+      </div>
+    </div>
+    <p class="project-summary">{project.summary}</p>
+    <div class="project-tags">
+      {project.technologies.slice(0, 4).map((technology) => <span>{technology}</span>)}
+    </div>
+    <span class="expand-label"><b class="more">Ver mais</b><b class="less">Mostrar menos</b> <i>↓</i></span>
+  </summary>
+  <div class="project-details">
+    <div class="detail-grid">
+      <div><span>Desafio</span><p>{project.challenge}</p></div>
+      <div><span>Minha atuação</span><p>{project.role}</p></div>
+      <div><span>Engenharia</span><p>{project.engineering}</p></div>
+      <div><span>Impacto</span><p>{project.impact}</p></div>
+    </div>
+    <div class="full-stack">
+      {project.technologies.map((technology) => <span>{technology}</span>)}
+    </div>
+  </div>
+</details>
